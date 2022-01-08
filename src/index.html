@@ -30,7 +30,62 @@
         src="./assets/images/Header-bottom-line1.png"
       />
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- Login Card -->
+      <div class="login-card">
+        <p class="form__head">Login as a Dosh Insurance Agent</p>
+        <form>
+          <label for="" class="main-label">Login Using</label>
+          <div class="center-to-grid methods">
+            <div class="login-method selected">
+              <input type="radio" id="email" name="login-method" />
+              <label for="email">
+                <div class="custom-label"></div>
+                Email</label
+              >
+            </div>
+            <div class="login-method">
+              <input type="radio" id="mobile" name="login-method" />
+              <label for="mobile">
+                <div class="custom-label"></div>
+                Mobile Number</label
+              >
+            </div>
+          </div>
+
+          <label for="number" class="main-label">Number</label>
+          <div class="number-inputs center-to-grid">
+            <select>
+              <option>+1</option>
+            </select>
+            <input type="tel" name="" id="" />
+          </div>
+          <label for="password" class="main-label">Password</label>
+          <input type="password" name="" id="password" class="center-to-grid" />
+          <p class="forgot-password">I forgot my password</p>
+          <button>Continue</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="company-details">
+        <img src="./assets/images/dosh-logo.png" />
+        <div class="address">
+          <p>Corporate Office</p>
+          <p>Sawtel Inc</p>
+          <p>2 Park Place</p>
+          <p>Harford, CT</p>
+          <p>06106</p>
+        </div>
+      </div>
+      <div class="contact">
+        <p>CONTACTS</p>
+        <p>Phone: 1-833-769-1767</p>
+        <p>Fax: 1-833-769-1767</p>
+      </div>
+      <div class="about"></div>
+      <div class="logo-links"></div>
+    </footer>
+    <script src="./app/login.js"></script>
   </body>
 </html>
