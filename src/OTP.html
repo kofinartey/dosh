@@ -4,28 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOSH-Insurance Login</title>
-    <link rel="stylesheet" href="./css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/otp.css" />
+    <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="header__top">
-        <div class="header__logo">
-          <a href="#">
-            <img src="./assets/images/logo_png.png" alt="Dosh logo"
-          /></a>
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="./assets/images/logo_png.png" alt="Dosh logo"
+        /></a>
+      </div>
+      <div class="header__form">
+        <div>
+          <input type="text" />
+          <button>LOGIN</button>
         </div>
-        <div class="header__form">
-          <div>
-            <input type="text" />
-            <button>LOGIN</button>
-          </div>
-          <p>Not registered? <a href="#">Signup</a></p>
-        </div>
+        <p>Not registered? <a href="#">Signup</a></p>
       </div>
       <img
         class="header__bottom"
@@ -33,43 +32,18 @@
       />
     </header>
     <main>
-      <!-- Login Card -->
       <div class="login-card">
-        <p class="form__head">Login as a Dosh Insurance Agent</p>
+        <p class="form__head client-name">SIMON KWAW</p>
+        <p>Please confirm OTP to proceed to login</p>
         <form class="login-form">
-          <label for="" class="main-label">Login Using</label>
-          <div class="center-to-grid methods">
-            <div class="login-method selected">
-              <input type="radio" id="email" name="login-method" />
-              <label for="email">
-                <div class="custom-label"></div>
-                Email</label
-              >
-            </div>
-            <div class="login-method">
-              <input type="radio" id="mobile" name="login-method" />
-              <label for="mobile">
-                <div class="custom-label"></div>
-                Mobile Number</label
-              >
-            </div>
-          </div>
+          <label for="otp" class="center-to-grid">Enter OTP</label>
+          <input type="text" id="otp" class="center-to-grid" />
 
-          <label for="number" class="main-label">Number</label>
-          <div class="number-inputs center-to-grid">
-            <select>
-              <option>+1</option>
-            </select>
-            <input type="tel" name="" id="" />
-          </div>
-          <label for="password" class="main-label">Password</label>
-          <input type="password" name="" id="password" class="center-to-grid" />
-          <a href="#" class="forgot-password">I forgot my password</a>
-          <button class="button">Continue</button>
+          <p class="resend">Didn't receive? <a href="#">Resend OTP</a></p>
+          <button>Confirm OTP</button>
         </form>
       </div>
     </main>
-
     <footer>
       <section class="footer-main">
         <div class="company-details">
@@ -122,27 +96,17 @@
           <div class="bottom">
             <a href="#"
               ><img
-                src="./assets/images/social media/fb.png"
+                src="./assets/images/social media/fb_1.png"
                 alt="facebook link"
             /></a>
             <a href="#"
               ><img
-                src="./assets/images/social media/twitter.png"
+                src="./assets/images/social media/twitter_1.png"
                 alt="twitter link"
             /></a>
             <a href="#"
               ><img
-                src="./assets/images/social media/IG.png  "
-                alt="instagram link"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/images/social media/IN.png  "
-                alt="instagram link"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/images/social media/YT.png  "
+                src="./assets/images/social media/IG_1.png  "
                 alt="instagram link"
             /></a>
           </div>
@@ -153,6 +117,5 @@
         <small> &#9400; Sawtel 2021 All Rights Reserved</small>
       </section>
     </footer>
-    <script src="./app/login.js"></script>
   </body>
 </html>

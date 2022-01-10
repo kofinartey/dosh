@@ -5,10 +5,35 @@
 }
 body {
   width: 100%;
+  height: 100vh;
+  background: url(../assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%;
   font-family: "Montserrat", sans-serif;
 }
 button {
   cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border-style: none;
+  background: linear-gradient(90deg, #e7d99f 20.43%, #be953c 100%);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+}
+.button::after {
+  content: "";
+  width: 4rem;
+  height: 3rem;
+}
+.button:hover {
+  opacity: 0.8;
 }
 a,
 a:hover,
@@ -16,16 +41,23 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+
 header {
   background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+header .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
   color: white;
-  position: relative;
-  z-index: 1;
 }
+header .header__bottom {
+  width: 100%;
+}
+
 .header__logo img {
   width: 10rem;
 }
@@ -55,36 +87,25 @@ header {
 .header__form a {
   color: #f2c780;
 }
-.header__bottom {
-  width: 100%;
-  position: absolute;
-  bottom: -12px;
-  left: 0;
-  right: 0;
-}
 
 /*main main*/
 main {
-  background-image: url(../assets/images/bg.png);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  height: 70%;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
 }
 
 .login-card {
-  width: 40rem;
+  margin: auto;
+  width: 35rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 1rem;
   color: #b8b8b8;
 }
-.login-card form {
+.login-card .login-form {
   font-size: 1.125rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -95,6 +116,9 @@ main {
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
+}
+.login-card .client-name {
+  font-size: 1.5rem;
 }
 .login-card form label {
   text-align: end;
@@ -107,7 +131,7 @@ main {
   padding: 0.3rem;
 }
 .login-card .main-label {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
 }
 .center-to-grid {
   align-self: center;
@@ -171,27 +195,15 @@ main {
 .forgot-password {
   grid-column: 2/3;
   font-size: 0.8rem;
-  color: #caa959;
+  color: #caa959 !important;
 }
-form button {
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  background: linear-gradient(90deg, #e7d99f 20.43%, #be953c 100%);
-  font-size: 1rem;
-  font-weight: bold;
+.login-form button {
   grid-column: 2/3;
   justify-self: flex-end;
-  margin-top: 1rem;
-  transition: all 0.1s ease-in-out;
 }
-form button:hover {
-  opacity: 0.8;
-}
-
 /*FOOTER*/
 footer {
   width: 100%;
-
   color: white;
   display: flex;
   flex-direction: column;
@@ -206,13 +218,16 @@ footer section {
   justify-content: space-between;
 }
 .footer-main {
+  height: 100%;
   background-color: #1a1a1a;
   border-bottom: 2px solid #bf965e;
 }
 .footer-bottom {
+  padding: 0.5rem 2rem;
   width: 100%;
   justify-content: flex-end;
 }
+
 .company-details {
   display: flex;
   align-items: center;
@@ -241,6 +256,24 @@ footer section {
 .about p:nth-of-type(2) {
   padding-top: 1.5rem;
   border-top: 1px solid white;
+}
+.logo-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 7rem;
+}
+.logo-links .bottom a {
+  transition: all ease-in-out 0.3s;
+}
+.logo-links .bottom img {
+  max-height: 20px;
+  margin: 0 0.2rem;
+}
+.logo-links .bottom a:hover img {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.5;
 }
 .copyright {
   color: white;

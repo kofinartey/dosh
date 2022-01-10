@@ -1,0 +1,27 @@
+/* OTP FORM*/
+.client-name + p {
+  text-align: center;
+  /* margin-bottom: 1rem; */
+}
+.otp-form {
+  width: 100%;
+}
+.otp-form .form__control {
+  display: flex;
+  align-items: center;
+}
+.otp-form {
+  /* padding: ; */
+}
+.otp-form input {
+  /* width: 80%; */
+}
+.resend {
+  font-size: 0.8rem;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  /* margin-top: 1rem; */
+}
+.resend a {
+  color: #bf965e;
+}
