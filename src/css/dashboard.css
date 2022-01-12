@@ -12,7 +12,7 @@
 .dash-summary .summary__card {
   width: 12rem;
   height: 12rem;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -28,10 +28,10 @@
   width: 3rem;
 }
 .dash-summary .summary__card p {
-  /* font-size: 0.8rem; */
-  /* font-weight: bold; */
 }
 .dash-summary .summary__card h2 {
+  font-size: 2rem;
+  font-weight: 900;
   color: white;
   z-index: 1;
 }
@@ -44,4 +44,29 @@
   top: 7.5rem;
   left: -3rem;
   background: linear-gradient(125.06deg, #00789e 9.41%, #00b9f3 60.94%);
+}
+.dash-summary .summary__card:nth-of-type(2) div {
+  background: linear-gradient(121.81deg, #5853d4 23.97%, #7570fe 58.98%);
+}
+.dash-summary .summary__card:nth-of-type(3) div {
+  background: linear-gradient(112.11deg, #c23a2c 35.1%, #f44f3e 63.71%);
+}
+.dash-summary .summary__card:nth-of-type(4) div {
+  background: linear-gradient(112.11deg, #db6f2d 35.1%, #ff7a00 63.71%);
+}
+.dash-summary .summary__card:nth-of-type(5) div {
+  background: linear-gradient(112.11deg, #41c22c 35.1%, #3ef450 63.71%);
+}
+.charts {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+}
+.charts #lineChart {
+  width: 40rem;
+}
+.charts div:nth-of-type(2) {
+  margin-left: 20rem;
 }
