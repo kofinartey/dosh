@@ -36,24 +36,40 @@
       <!-- Login Card -->
       <div class="login-card">
         <p class="form__head">Login as a Dosh Insurance Agent</p>
+        <div class="close">
+          <img src="./assets/images/icons/close.png" alt="" />
+        </div>
         <form class="login-form">
           <label for="" class="main-label">Login Using</label>
           <div class="center-to-grid methods">
             <div class="login-method selected">
-              <input type="radio" id="email" name="login-method" />
-              <label for="email">
+              <input
+                type="radio"
+                id="email-radio"
+                name="login-method"
+                value="email"
+              />
+              <label for="email-radio">
                 <div class="custom-label"></div>
                 Email</label
               >
             </div>
             <div class="login-method">
-              <input type="radio" id="mobile" name="login-method" />
+              <input
+                type="radio"
+                id="mobile"
+                name="login-method"
+                value="mobile"
+              />
               <label for="mobile">
                 <div class="custom-label"></div>
                 Mobile Number</label
               >
             </div>
           </div>
+
+          <!-- <label for="email" class="main-label">email</label>
+          <input type="email" name="" id="email" class="center-to-grid" /> -->
 
           <label for="number" class="main-label">Number</label>
           <div class="number-inputs center-to-grid">

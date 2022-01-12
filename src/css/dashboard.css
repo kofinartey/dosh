@@ -1,0 +1,47 @@
+.main-panel .dash-summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9fd;
+  padding: 2rem 6rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.dash-summary .summary__card {
+  width: 12rem;
+  height: 12rem;
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.dash-summary .summary__card img {
+  width: 3rem;
+}
+.dash-summary .summary__card p {
+  /* font-size: 0.8rem; */
+  /* font-weight: bold; */
+}
+.dash-summary .summary__card h2 {
+  color: white;
+  z-index: 1;
+}
+
+.dash-summary .summary__card div {
+  width: 18rem;
+  height: 14rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 7.5rem;
+  left: -3rem;
+  background: linear-gradient(125.06deg, #00789e 9.41%, #00b9f3 60.94%);
+}

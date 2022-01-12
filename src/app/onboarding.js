@@ -10,4 +10,3 @@ dashLinks.forEach((link) => {
     link.classList.add("current");
   }
 });
-console.log(window.location.pathname);

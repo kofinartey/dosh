@@ -11,6 +11,7 @@ body {
   background-size: contain;
   background-size: auto 100%;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 button {
   cursor: pointer;
@@ -88,6 +89,91 @@ header .header__bottom {
   color: #f2c780;
 }
 
+.quick-actions {
+  width: 13rem;
+  height: 38rem;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: -13rem;
+  top: 10rem;
+  z-index: 9;
+  transition: right ease-in-out 0.3s;
+}
+.quick-actions-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 4;
+}
+.overlay-visibility {
+  /* opacity: 1; */
+  pointer-events: all;
+}
+.quick-actions-visibility {
+  right: 2rem;
+}
+.quick-actions .content {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+.quick-actions .content::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: white;
+}
+.quick-actions .content::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  height: 2rem;
+  border-radius: 1rem;
+}
+.quick-actions .toggler {
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem 0.51rem 0 0;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -4rem;
+  top: 4rem;
+  cursor: pointer;
+}
+.quick-actions .toggler img {
+  width: 0.7rem;
+}
+.quick-actions-card {
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.quick-actions-card img {
+  width: 3rem;
+}
+
 /*main main*/
 main {
   height: 70%;
@@ -104,6 +190,17 @@ main {
   padding: 2rem;
   border-radius: 1rem;
   color: #b8b8b8;
+  position: relative;
+}
+.login-card .close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+.login-card .close img {
+  width: 1rem;
+  /* height: 1rem; */
 }
 .login-card .login-form {
   font-size: 1.125rem;
