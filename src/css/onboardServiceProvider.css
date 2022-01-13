@@ -1,0 +1,172 @@
+h1 {
+  margin: 2rem 0;
+  color: #747474;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tabs .foundation-radios {
+  display: none;
+}
+.form-tabs {
+  width: 36rem;
+  background-color: #575757;
+  color: white;
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+}
+.form-tabs label {
+  width: 12rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+  z-index: 2;
+}
+.tab-indicator {
+  width: 12rem;
+  height: 3rem;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: -0.4375rem;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: left ease-in-out 0.3s;
+}
+.tab-indicator::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* background-color: white; */
+  position: absolute;
+  left: -25px;
+  bottom: 0;
+  box-shadow: 10px 10px 0 white;
+}
+.tab-indicator::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* background-color: blue; */
+  position: absolute;
+  right: -25px;
+  bottom: 0;
+  box-shadow: -10px 10px 0 white;
+}
+#authorizer:checked ~ .form-tabs .tab-indicator {
+  left: 12rem;
+}
+#regulators:checked ~ .form-tabs .tab-indicator {
+  left: 24rem;
+}
+
+/* change selected tab color when clicked */
+#facility:checked ~ .form-tabs label[for="facility"],
+#authorizer:checked ~ .form-tabs label[for="authorizer"],
+#regulators:checked ~ .form-tabs label[for="regulators"] {
+  color: #747474;
+  font-weight: bold;
+}
+.form__content .facility-form,
+.form__content .authorizer-form,
+.form__content .regulators-form {
+  display: none;
+}
+
+/* show form when a particular tab is clicked */
+#facility:checked ~ .form__content div:nth-of-type(1) {
+  display: flex;
+}
+#authorizer:checked ~ .form__content div:nth-of-type(2) {
+  display: block;
+}
+#regulators:checked ~ .form__content div:nth-of-type(3) {
+  display: flex;
+}
+.form__content {
+  width: 80rem;
+  height: 31.25rem;
+  background-color: white;
+  color: #b8b8b8;
+  padding: 2rem;
+  font-size: 1.25rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__content .form__control {
+  display: flex;
+  align-items: center;
+}
+.facility-form,
+.authorizer-form,
+.regulators-form {
+  width: 90%;
+}
+.half-1,
+.half-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.form__content select,
+.form__content input[type="text"],
+.form__content input[type="date"] {
+  width: 14rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: none;
+  background-color: #f4f4f4;
+  border-radius: 0.5rem;
+}
+.form__content label {
+  margin-right: 1rem;
+}
+
+label[for="file"] {
+  display: flex;
+  border: 2px solid #e6e6e6;
+  color: #525252;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+label[for="file"] input {
+  display: none;
+}
+label[for="file"] div {
+  padding: 0.5 1rem;
+}
+
+label[for="file"] div:nth-of-type(1) {
+  background-color: #e6e6e6;
+  border-radius: 0.5rem;
+}
+.pages-nav {
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+.pages-nav label {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+}

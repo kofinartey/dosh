@@ -232,23 +232,3 @@ label[for="file"] div:nth-of-type(1) {
 .pages-nav a {
   color: #a6a6a6;
 }
-.arrow {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  padding-left: 0.5rem;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  cursor: pointer;
-}
-.arrow img {
-  width: 0.8rem;
-  height: 1rem;
-}
-.left-arrow {
-  background: linear-gradient(90deg, #be953c 0%, #e7d99f 100%);
-}
-.right-arrow {
-  background: linear-gradient(90deg, #be953c 0%, #e7d99f 100%);
-}

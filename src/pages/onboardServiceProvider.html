@@ -9,6 +9,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/onboarding.css" />
+    <link rel="stylesheet" href="../css/onboardServiceProvider.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -32,7 +35,181 @@
         src="../assets/images/Header-bottom-line1.png"
       />
     </header>
-    <main></main>
+
+    <main>
+      <div class="side-panel">
+        <section class="avatar">
+          <img src="../assets/images/profile.jpg" />
+        </section>
+        <section class="icon-bkg"></section>
+        <section class="dash-menu">
+          <a href="./dashboard.html" id="dashboard">
+            <img src="../assets/images/icons/dashboard.png" alt="" />
+            Dasboard</a
+          >
+          <a href="#" id="quick-access">
+            <img src="../assets/images/icons/quick-access.png" alt="" /> Quick
+            Access</a
+          >
+          <a href="#" id="policies">
+            <img src="../assets/images/icons/policies.png" alt="" /> Policies</a
+          >
+          <a href="#" id="onboarding">
+            <img src="../assets/images/icons/onboarding-forms.png" alt="" />
+            Onboarding Forms</a
+          >
+          <a href="#" id="Subscribers">
+            <img src="../assets/images/icons/dashboard.png" alt="" /> My
+            Subscribers</a
+          >
+          <a href="#" id="providers">
+            <img src="../assets/images/icons/quick-access.png" alt="" /> Service
+            Providers</a
+          >
+          <a href="#" id="locations">
+            <img src="../assets/images/icons/policies.png" alt="" />
+            Locations</a
+          >
+          <a href="#" id="reports">
+            <img src="../assets/images/icons/onboarding-forms.png" alt="" />
+            Reports</a
+          >
+        </section>
+      </div>
+
+      <!-- Main panel -->
+      <div class="main-panel">
+        <h1>Onboard Service Provider</h1>
+        <div class="tabs">
+          <input type="radio" name="service-provider" id="facility"  class="foundation-radios"  />
+          <input type="radio" name="service-provider" id="authorizer" class="foundation-radios"  />
+          <input type="radio" name="service-provider" id="regulators" class="foundation-radios"  checked />
+          <div class="form-tabs provider-tabs">
+            <label for="facility">Facility Profile</label>
+            <label for="authorizer">Authorizer Profile</label>
+            <label for="regulators">Regulators Profile</label>
+            <div class="tab-indicator"></div>
+          </div>
+
+          <!-- ACTUAL FORM CONTENT BEGINS -->
+          <form class="form__content">
+            <div class="facility-form">
+                <!-- first page -->
+                <div class="half-1">
+                    <div class="form__control">
+                        <label for="facility-category">Facility Category</label>
+                        <select>
+                            <option>Select category</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div class="form__control">
+                        <label for="facility-region">Facility Region</label>
+                        <select>
+                            <option>Select Region</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form__control">
+                        <label for="facility-district">Facility District</label>
+                        <select>
+                            <option>Select District</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form__control">
+                        <label for="ownership">Ownership</label>
+                        <select>
+                            <option>Select category</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="half-2">
+                    <div class="form__control">
+                        <label for="facility-name">Facility Name</label>
+                        <input type="text" name="" id="facility-name">
+                    </div>
+                    <div class="form__control">
+                        <label for="legal-name">Legal Name</label>
+                        <input type="text" name="" id="legal-name">
+                    </div>
+                    <div class="form__control">
+                        <label for="gps-cordinates">GPS Cordinates</label>
+                        <input type="text" name="" id="gps-cordinates">
+                    </div>
+                </div>
+            </div>
+            <!-- second page -->
+            <div class="authorizer-form">
+              <p>
+                AUTHORIZER Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi debitis quae, deleniti unde quasi consectetur laborum
+                non inventore sit fugiat deserunt quas? Voluptatem sint ducimus
+                sequi rerum dicta soluta rem?
+              </p>
+            </div>
+            <!-- third page -->
+            <div class="regulators-form">
+             <div class="half-1">
+                <div class="form__control">
+                    <label for="registration-body">Health registration Body</label>
+                    <input type="text" name="" id="registration-body">
+                </div>
+                <div class="form__control">
+                    <label for="registration-number">Health registration Number</label>
+                    <input type="text" name="" id="registration-number">
+                </div>
+                <div class="form__control" style="display: flex;">
+                    <label for="">Upload Logo</label>
+                    <label for="gps-cordinates">
+                        <div>No file chosen</p></div>
+                        <div><p>Choose file</p></div>
+                        <input type="file" name="" id="gps-cordinates" >
+                    </label>
+                </div>
+                <div class="form__control">
+                    <label for="ghanapost-gps">GhanaPost GPS</label>
+                    <input type="text" name="" id="ghanapost-gps">
+                </div>
+             </div>
+
+             <div class="half-2">
+                <div class="form__control">
+                    <label for="registration-date">Date of Registration</label>
+                    <input type="date" name="" id="registration-date">
+                </div>
+                <div class="form__control">
+                    <label for="date registered">Date registered</label>
+                    <input type="date" name="" id="date registered">
+                </div>
+                <div class="form__control">
+                    <label for="rgd-number">RGD Cert Number</label>
+                    <input type="date" name="" id="rgd-number">
+                </div>
+             </div>
+            </div>
+            <div class="pages-nav">
+                <div class="arrow left-arrow"> <img src="../assets/images/icons/arrow-left.png" alt=""></div>
+                <label for="facility"></label>
+                <label for="authorizer"></label>
+                <label for="regulators"></label>
+                <div class="arrow right-arrow"> <img src="../assets/images/icons/arrow-right.png" alt=""></div>
+            </div>
+        </form>
+        <!-- tab indicator -->
+      </div>
+      <!--main panel ends-->
+    </main>
+
     <footer>
       <section class="footer-main">
         <div class="company-details">

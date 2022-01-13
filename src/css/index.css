@@ -122,7 +122,7 @@ header .header__bottom {
   pointer-events: all;
 }
 .quick-actions-visibility {
-  right: 2rem;
+  right: 1rem;
 }
 .quick-actions .content {
   width: 100%;
@@ -148,9 +148,10 @@ header .header__bottom {
   font-weight: bold;
   position: absolute;
   transform: rotate(-90deg);
-  left: -4rem;
+  left: -3.6rem;
   top: 4rem;
   cursor: pointer;
+  z-index: -1;
 }
 .quick-actions .toggler img {
   width: 0.7rem;
@@ -176,6 +177,35 @@ header .header__bottom {
   width: 3rem;
 }
 
+/* nav for pagination */
+.pages-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.pages-nav a {
+  color: #a6a6a6;
+}
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow img {
+  width: 0.8rem;
+  height: 1rem;
+}
+.left-arrow {
+  background: linear-gradient(90deg, #be953c 0%, #e7d99f 100%);
+}
+.right-arrow {
+  background: linear-gradient(90deg, #be953c 0%, #e7d99f 100%);
+}
 /*main main*/
 main {
   height: 70%;
