@@ -167,26 +167,6 @@ main {
   margin: 0 0.2rem;
 }
 
-label[for="file"] {
-  display: flex;
-  border: 2px solid #e6e6e6;
-  color: #525252;
-  font-size: 0.8rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-label[for="file"] input {
-  display: none;
-}
-label[for="file"] div {
-  padding: 0.5rem 1rem;
-}
-
-label[for="file"] div:nth-of-type(1) {
-  background-color: #e6e6e6;
-  border-radius: 0.5rem;
-}
-
 .choose-file button {
   margin: 0 1rem;
 }
@@ -222,13 +202,4 @@ label[for="file"] div:nth-of-type(1) {
 }
 .sheet__row:nth-of-type(2n) {
   background-color: #f7f7f7;
-}
-
-.pages-nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.pages-nav a {
-  color: #a6a6a6;
 }

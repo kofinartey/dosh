@@ -81,9 +81,9 @@
       <div class="main-panel">
         <h1>Onboard Service Provider</h1>
         <div class="tabs">
-          <input type="radio" name="service-provider" id="facility"  class="foundation-radios"  />
+          <input type="radio" name="service-provider" id="facility"  class="foundation-radios" checked />
           <input type="radio" name="service-provider" id="authorizer" class="foundation-radios"  />
-          <input type="radio" name="service-provider" id="regulators" class="foundation-radios"  checked />
+          <input type="radio" name="service-provider" id="regulators" class="foundation-radios"  />
           <div class="form-tabs provider-tabs">
             <label for="facility">Facility Profile</label>
             <label for="authorizer">Authorizer Profile</label>
@@ -159,41 +159,56 @@
             </div>
             <!-- third page -->
             <div class="regulators-form">
-             <div class="half-1">
-                <div class="form__control">
-                    <label for="registration-body">Health registration Body</label>
-                    <input type="text" name="" id="registration-body">
+                <div class="regulators-form__top">
+                    <div class="half-1">
+                        <div class="form__control">
+                            <label for="registration-body">Health registration Body</label>
+                            <input type="text" name="" id="registration-body">
+                        </div>
+                        <div class="form__control">
+                            <label for="registration-number">Health registration Number</label>
+                            <input type="text" name="" id="registration-number">
+                        </div>
+                        <div class="form__control" style="display: flex;">
+                            <label for="gps-cordinates">Upload Logo</label>
+                            <!-- <label for="gps-cordinates">
+                                <div>No file chosen</p></div>
+                                <div><p>Choose file</p></div>
+                            </label> -->
+                            <input type="file" name="" id="gps-cordinates" >
+                        </div>
+                        <div class="form__control">
+                            <label for="ghanapost-gps">GhanaPost GPS</label>
+                            <input type="text" name="" id="ghanapost-gps">
+                        </div>
+                     </div>
+        
+                     <div class="half-2">
+                        <div class="form__control">
+                            <label for="registration-date">Date of Registration</label>
+                            <input type="date" name="" id="registration-date">
+                        </div>
+                        <div class="form__control">
+                            <label for="date registered">Date registered</label>
+                            <input type="date" name="" id="date registered">
+                        </div>
+                        <div class="form__control" style="display: flex;">
+                            <label for="Upload-cert">Upload Certificate</label>
+                            <input type="file" name="" id="Upload-cert" >
+                        </div>
+                        <div class="form__control rgd-cert">
+                            <label for="rgd-number">RGD Cert Number</label>
+                            <input type="text" name="" id="rgd-number">
+                            <div class="some-dot"></div>
+                            <button class="button">Verify Cert</button>
+                        </div>
+                     </div>
                 </div>
-                <div class="form__control">
-                    <label for="registration-number">Health registration Number</label>
-                    <input type="text" name="" id="registration-number">
-                </div>
-                <div class="form__control" style="display: flex;">
-                    <label for="">Upload Logo</label>
-                    <label for="gps-cordinates">
-                        <div>No file chosen</p></div>
-                        <div><p>Choose file</p></div>
-                        <input type="file" name="" id="gps-cordinates" >
-                    </label>
-                </div>
-                <div class="form__control">
-                    <label for="ghanapost-gps">GhanaPost GPS</label>
-                    <input type="text" name="" id="ghanapost-gps">
-                </div>
-             </div>
-
-             <div class="half-2">
-                <div class="form__control">
-                    <label for="registration-date">Date of Registration</label>
-                    <input type="date" name="" id="registration-date">
-                </div>
-                <div class="form__control">
-                    <label for="date registered">Date registered</label>
-                    <input type="date" name="" id="date registered">
-                </div>
-                <div class="form__control">
-                    <label for="rgd-number">RGD Cert Number</label>
-                    <input type="date" name="" id="rgd-number">
+             
+             <div>
+                <div class="form__control" id="special-notes">
+                    <label for="special-notes">Special Note(s)</label>
+                    <textarea name="" id=""  rows="5"></textarea>
                 </div>
              </div>
             </div>
@@ -296,5 +311,6 @@
         <small> &#9400; Sawtel 2021 All Rights Reserved</small>
       </section>
     </footer>
+    <script src="../app/onboardServiceProvider.js"></script>
   </body>
 </html>
