@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/onboarding.css" />
     <link rel="stylesheet" href="../css/onboardServiceProvider.css" />
+    <link rel="stylesheet" href="../css/onboardCorporate.css" />
+
 
     <title>Document</title>
   </head>
@@ -37,6 +39,7 @@
     </header>
 
     <main>
+        <!-- side panel -->
       <div class="side-panel">
         <section class="avatar">
           <img src="../assets/images/profile.jpg" />
@@ -79,109 +82,90 @@
 
       <!-- Main panel -->
       <div class="main-panel">
-        <h1>Onboard Service Provider</h1>
+        <h1>Onboard Corporate</h1>
         <div class="tabs">
-          <input type="radio" name="service-provider" id="facility"  class="foundation-radios" checked />
-          <input type="radio" name="service-provider" id="authorizer" class="foundation-radios"  />
-          <input type="radio" name="service-provider" id="regulators" class="foundation-radios"  />
+          <input type="radio" name="corporate" id="tab-1"  class="foundation-radios" checked />
+          <input type="radio" name="corporate" id="tab-2" class="foundation-radios"  />
           <div class="form-tabs provider-tabs">
-            <label for="facility">Facility Profile</label>
-            <label for="authorizer">Authorizer Profile</label>
-            <label for="regulators">Regulators Profile</label>
+            <label for="tab-1">Page 1</label>
+            <label for="tab-2">Page 2</label>
             <div class="tab-indicator"></div>
           </div>
 
           <!-- ACTUAL FORM CONTENT BEGINS -->
           <form class="form__content">
             <img src="../assets/images/icons/close_round.png" alt="" class="close-form">
-            <div class="facility-form">
+
+            <div class="page-1-form">
                 <!-- first page -->
                 <div class="half-1">
                     <div class="form__control">
-                        <label for="facility-category">Facility Category</label>
+                        <label for="company-name">Company Name</label>
+                        <input type="text" name="" id="company-name">
+                    </div>
+                    <div class="form__control">
+                        <label for="company-name">Industry Type</label>
                         <select>
-                            <option>Select category</option>
+                            <option>Select Industry</option>
                             <option>A</option>
                             <option>B</option>
-                            <option>C</option>
                         </select>
                     </div>
                     <div class="form__control">
-                        <label for="facility-region">Facility Region</label>
-                        <select>
-                            <option>Select Region</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option></option>
-                        </select>
+                        <label for="">Uplod RGD Cert</label>
+                        <input type="file" name="" id="" >
                     </div>
                     <div class="form__control">
-                        <label for="facility-district">Facility District</label>
-                        <select>
-                            <option>Select District</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option></option>
-                        </select>
+                        <label for="">Uplod  Cert</label>
+                        <input type="file" name="" id="" >
                     </div>
                     <div class="form__control">
-                        <label for="ownership">Ownership</label>
+                        <label for="company-name">ID Type</label>
                         <select>
-                            <option>Select category</option>
+                            <option>Select ID Type</option>
                             <option>A</option>
                             <option>B</option>
-                            <option></option>
                         </select>
                     </div>
                 </div>
                 <div class="half-2">
                     <div class="form__control">
-                        <label for="facility-name">Facility Name</label>
+                        <label for="facility-name">Authorizer's Name</label>
                         <input type="text" name="" id="facility-name">
                     </div>
                     <div class="form__control">
-                        <label for="legal-name">Legal Name</label>
-                        <input type="text" name="" id="legal-name">
+                        <label for="facility-name">Position</label>
+                        <input type="text" name="" id="facility-name">
                     </div>
-                    <div class="form__control">
-                        <label for="gps-cordinates">GPS Cordinates</label>
-                        <input type="text" name="" id="gps-cordinates">
+                    <div class="form__control rgd-cert">
+                        <label for="rgd-number">RGD Reg Number</label>
+                        <input type="text" name="" id="rgd-number">
+                        <div class="some-dot"></div>
+                        <button class="button">Verify</button>
+                    </div>
+                    <div class="form__control rgd-cert">
+                        <label for="rgd-number">RGD Cert Number</label>
+                        <input type="text" name="" id="rgd-number">
+                        <div class="some-dot"></div>
+                        <button class="button">Verify</button>
+                    </div>
+                    <div class="form__control rgd-cert">
+                        <label for="rgd-number">ID Number</label>
+                        <input type="text" name="" id="rgd-number">
+                        <div class="some-dot"></div>
+                        <button class="button">Verify</button>
                     </div>
                 </div>
             </div>
             <!-- second page -->
-            <div class="authorizer-form">
-              <p>
-                AUTHORIZER Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi debitis quae, deleniti unde quasi consectetur laborum
-                non inventore sit fugiat deserunt quas? Voluptatem sint ducimus
-                sequi rerum dicta soluta rem?
-              </p>
-            </div>
-            <!-- third page -->
-            <div class="regulators-form">
-                <div class="regulators-form__top">
+    
+            <div class="page-2-form">
                     <div class="half-1">
                         <div class="form__control">
                             <label for="registration-body">Health registration Body</label>
                             <input type="text" name="" id="registration-body">
                         </div>
-                        <div class="form__control">
-                            <label for="registration-number">Health registration Number</label>
-                            <input type="text" name="" id="registration-number">
-                        </div>
-                        <div class="form__control" style="display: flex;">
-                            <label for="gps-cordinates">Upload Logo</label>
-                            <!-- <label for="gps-cordinates">
-                                <div>No file chosen</p></div>
-                                <div><p>Choose file</p></div>
-                            </label> -->
-                            <input type="file" name="" id="gps-cordinates" >
-                        </div>
-                        <div class="form__control">
-                            <label for="ghanapost-gps">GhanaPost GPS</label>
-                            <input type="text" name="" id="ghanapost-gps">
-                        </div>
+                     
                      </div>
         
                      <div class="half-2">
@@ -189,35 +173,14 @@
                             <label for="registration-date">Date of Registration</label>
                             <input type="date" name="" id="registration-date">
                         </div>
-                        <div class="form__control">
-                            <label for="date registered">Date registered</label>
-                            <input type="date" name="" id="date registered">
-                        </div>
-                        <div class="form__control" style="display: flex;">
-                            <label for="Upload-cert">Upload Certificate</label>
-                            <input type="file" name="" id="Upload-cert" >
-                        </div>
-                        <div class="form__control rgd-cert">
-                            <label for="rgd-number">RGD Cert Number</label>
-                            <input type="text" name="" id="rgd-number">
-                            <div class="some-dot"></div>
-                            <button class="button">Verify</button>
-                        </div>
+                      
                      </div>
-                </div>
              
-             <div>
-                <div class="form__control" id="special-notes">
-                    <label for="special-notes">Special Note(s)</label>
-                    <textarea name="" id=""  rows="5"></textarea>
-                </div>
-             </div>
             </div>
             <div class="pages-nav">
                 <div class="arrow left-arrow"> <img src="../assets/images/icons/arrow-left.png" alt=""></div>
-                <label for="facility"></label>
-                <label for="authorizer"></label>
-                <label for="regulators"></label>
+                <label for="tab-1"></label>
+                <label for="tab-2"></label>
                 <div class="arrow right-arrow"> <img src="../assets/images/icons/arrow-right.png" alt=""></div>
             </div>
         </form>

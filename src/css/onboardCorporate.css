@@ -1,0 +1,42 @@
+.form-tabs {
+  width: 24rem;
+}
+#tab1:checked ~ .form-tabs .tab-indicator {
+  left: 12rem;
+}
+#tab2:checked ~ .form-tabs .tab-indicator {
+  left: 24rem;
+}
+/* change selected tab color when clicked */
+#tab-1:checked ~ .form-tabs label[for="tab-1"],
+#tab-2:checked ~ .form-tabs label[for="tab-2"] {
+  color: #747474;
+  font-weight: bold;
+}
+
+/* move indicator tab */
+#tab-1:checked ~ .form-tabs .tab-indicator {
+  left: 0;
+}
+#tab-2:checked ~ .form-tabs .tab-indicator {
+  left: 12rem;
+}
+
+.form__content .page-1-form,
+.form__content .page-2-form {
+  width: 80%;
+  display: none;
+  margin-top: 2rem;
+}
+#tab-1:checked ~ .form__content div:nth-of-type(1) {
+  display: flex;
+}
+#tab-2:checked ~ .form__content div:nth-of-type(2) {
+  display: flex;
+}
+
+/* change color of page nav for corresponding form */
+#tab-1:checked ~ .form__content .pages-nav label[for="tab-1"],
+#tab-2:checked ~ .form__content .pages-nav label[for="tab-2"] {
+  background-color: #e7d99f;
+}
